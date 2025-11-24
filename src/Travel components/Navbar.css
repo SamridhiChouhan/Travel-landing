@@ -1,0 +1,25 @@
+.navbar {
+  padding-top: 0.5rem !important;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 2rem;
+  z-index: 1;
+}
+
+.col-navbar {
+  height: 20rem;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    align-items: baseline;
+  }
+}

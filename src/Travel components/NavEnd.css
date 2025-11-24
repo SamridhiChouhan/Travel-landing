@@ -1,0 +1,94 @@
+.nav-end {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.navSearch {
+  width: 22rem;
+  height: 2rem;
+  margin: 0 1rem;
+  display: flex;
+}
+
+.navSearch input {
+  width: 85%;
+  height: 100%;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+  padding: 0.2rem 1rem;
+  border: none;
+  background-color: #e2e1e1;
+}
+.navSearch input::placeholder {
+  color: rgb(83, 83, 83);
+  font-size: 0.9rem;
+}
+
+.navSearch button {
+  width: 15%;
+  height: 100%;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border: none;
+  background-color: #eeecec;
+}
+
+.navSearch button:hover {
+  background-color: #bab7b7;
+}
+
+.book-btn {
+  height: 2rem;
+  padding: 0 1.5rem;
+  border-radius: 1rem;
+  background-color: rgb(2, 2, 103);
+  border: none;
+  color: white;
+}
+
+.col-navEnd {
+  display: block;
+}
+@media (max-width: 1200px) {
+  .col-navEnd {
+    display: flex;
+  }
+}
+
+@media (max-width: 860px) {
+  .nav-end {
+    display: none;
+    margin: 0;
+    position: absolute;
+    top: 14rem;
+    left: 1rem;
+  }
+  .col-navEnd {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .navSearch {
+    margin-bottom: 0.6rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .navSearch {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .navSearch {
+    width: 17rem;
+  }
+  .navSearch input {
+    padding-right: 0;
+    width: 88%;
+  }
+  .navSearch button {
+    width: 12%;
+  }
+}
